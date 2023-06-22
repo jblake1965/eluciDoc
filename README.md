@@ -46,6 +46,7 @@ the end of the run (as with Excel, note the location of the Word
 executable). The master list file is saved in the same location as the
 file with the document being searched, with the same name as the file
 being searched with "..._[name of the party]_srch.docx" appended.
+
 # External Dependencies and Licenses
 
 | Name:        | Version: | License:                                                                |
