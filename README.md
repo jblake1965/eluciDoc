@@ -12,7 +12,7 @@ A .docx, .pdf or .txt file is imported and tokenized via the Natural
 Language Tool Kit (NLTK) library. The user inputs the name or identifier
 of a party to the contract, and a concordance for that term is generated in the console, in the form below:
 
-<img src="C:\Users\John Blake\eluciDoc\Pictures\Screenshot 2023-05-04 071143.jpg" title="Concordance screenshot" width="900"/>
+![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-05-04%20071143.jpg)
 
 From the concordance, terms and phrases following the party are culled
 to produce a list of search phrases (e.g. "Seller shall", "Seller's
@@ -24,7 +24,7 @@ copying the concordance list from the console (ctrl + c), and then
 importing the results into an Excel table using the legacy data import
 wizard, as shown below:
 
-<img src="C:\Users\John Blake\eluciDoc\Pictures\Screenshot 2023-05-04 071634.jpg" width="900" title="Excel screenshot"/>
+![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-05-04%20071634.jpg)
 
 Note: the subprocess call below uses the default Microsoft
 Office 365™ install location:
@@ -45,7 +45,7 @@ master list is then saved as a Word file that is opened automatically at
 the end of the run (as with Excel, note the location of the Word
 executable). The master list file is saved in the same location as the
 file with the document being searched, with the same name as the file
-being searched with "..._[name of the party]_srch.docx" appended.
+being searched with "..._[name of the party]_search_result.docx" appended.
 
 # External Dependencies and Licenses
 
@@ -83,12 +83,12 @@ is not important but broader capture is, the case-sensitive feature can be turne
 NLTK will divide a word at " 's " and " ' " with a possessive case. See
 below:
 
-<img src="C:\Users\John Blake\eluciDoc\Pictures\Screenshot 2023-05-04 181140.jpg" title="Excel screenshot" width="900"/>
+![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-05-04%20181140.jpg)
 
 Therefore, it is necessary to add " 's " and " ' " as the first search term in order
 to capture an instance of a possessive case, as illustrated below:
 
-<img src="C:\Users\John Blake\eluciDoc\Pictures\Screenshot 2023-05-27 121145.jpg" width="900" title="Predicate phrase input screenshot"/>
+![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-05-27%20121145.jpg)
 
 ## PDFs
 Due to the nature of .pdf files and the sometimes-inconsistent results
