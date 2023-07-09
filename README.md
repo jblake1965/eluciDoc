@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ```
 You need to separately install the spacy library `en-core-web-lg` into the virtual environment as follows:
 ```
-python -m spacy download en-core-web-lg
+python -m spacy download en_core_web_lg
 ```
 You also need to install the `punkt` module for nltk:
 ```python
