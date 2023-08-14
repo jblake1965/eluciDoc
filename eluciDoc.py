@@ -104,9 +104,7 @@ while True:
             for sent in sentences:
                 for i in search_phrase_list:
                     if i in sent:
-                        if sent not in master_List:
-                            master_List.append(sent)
-                continue
+                        master_List.append(sent)
             break
 
     document = Document()
