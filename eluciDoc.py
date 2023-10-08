@@ -12,8 +12,7 @@ from pathlib import Path
 from docx import Document
 from docx.shared import Inches, Pt
 
-global text
-global case_sensitive
+global text, case_sensitive, search_phrase, search_phrase_list, master_list, sentences
 
 
 def concord(party_term: str, content: str):
@@ -22,6 +21,12 @@ def concord(party_term: str, content: str):
     token_text = nltk.Text(tokens)
     concordance_result = token_text.concordance(party_term, width=150, lines=500)
     return concordance_result
+
+
+def is_match(sent):
+    for i in search_phrase_list:
+        if i in sent:
+            return sent
 
 
 while True:
@@ -72,7 +77,7 @@ while True:
     master_List = []
     search_phrase_list: list[str] = []
 
-    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected:')
+    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected:)')
     if case_sensitive == 'No':
         party = party.lower()
     concord(party, text)
@@ -101,10 +106,7 @@ while True:
         response = pyip.inputMenu(['Enter another search term', 'Finished for this party'], numbered=True)
 
         if response == 'Finished for this party':
-            for sent in sentences:
-                for i in search_phrase_list:
-                    if i in sent:
-                        master_List.append(sent)
+            master_List = [sent for sent in sentences if is_match(sent)]
             break
 
     document = Document()
