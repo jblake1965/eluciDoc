@@ -8,23 +8,9 @@ user-selected party in the document, followed by a user-selected phrase.
 It is designed to be used in conjunction with Microsoft™ Office 365™
 Word and Excel™ apps.
 # How it works:
-A .docx, .pdf or .txt file is imported and tokenized via the Natural
-Language Tool Kit (NLTK) library. The user inputs the name or identifier
-of a party to the contract, and a concordance for that term is generated in the console, in the form below:
+A .docx, .pdf or .txt file is processed as utf8 text (note: MS Word smartquotes must be converted to straight quotes).  The term for the party-in-interest in the contract is passed with the processed text to textacy's Keyword in Context (KWIC) function, and the result then save as an Excel file which is opened with a subprocess call, returning results similar to the following, which can be further processed (e.g. alphabetized) in Excel:
 
-![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-05-04%20071143.jpg)
-
-From the concordance, terms and phrases following the party are culled
-to produce a list of search phrases (e.g. "Seller shall", "Seller's
-satisfaction").
-
-If the results from the concordance are voluminous, they can be imported
-into Excel™ by choosing to run that app (through a subprocess call) and
-copying the concordance list from the console (ctrl + c), and then
-importing the results into an Excel table using the legacy data import
-wizard, as shown below:
-
-![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-05-04%20071634.jpg)
+![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-12-10%20224559.jpg)
 
 Note: the subprocess call below uses the default Microsoft
 Office 365™ install location:
@@ -52,7 +38,7 @@ being searched with "..._[name of the party]_search_result.docx" appended.
 | Name:        | Version: | License:                                                                |
 |--------------|----------|-------------------------------------------------------------------------|
 | docx2python  | 2.0.4    | [MIT](https://pypi.org/project/docx2python/)                            |
-| nltk         | 3.7      | [Apache 2.0](https://pypi.org/project/nltk/)                            |
+| textacy      | 3.7      | [Apache 2.0](https://pypi.org/project/textacy/)                            |
 | pyinputplus  | 0.2.12   | [BSD](https://github.com/asweigart/pyinputplus/blob/master/LICENSE.txt) |
 | python-docx  | 0.8.11   | [MIT](https://github.com/atriumlts/python-docx/blob/master/LICENSE)     |
 | spacy        | 3.4.1    | [MIT](https://pypi.org/project/spacy/)                                  |
@@ -65,14 +51,9 @@ This project was created in a virtual environment.  Also, if installing the depe
 ```
 pip install -r requirements.txt
 ```
-You need to separately install the spacy library `en-core-web-lg` into the virtual environment as follows:
+You need to separately install the spacy library `en_core_web_lg` into the virtual environment as follows:
 ```
 python -m spacy download en_core_web_lg
-```
-You also need to install the `punkt` module for nltk:
-```python
-import nltk
-nltk.download('punkt')
 ```
 
 ## Case Sensitive Searches
