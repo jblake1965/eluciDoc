@@ -8,12 +8,16 @@ user-selected party in the document, followed by a user-selected phrase.
 It is designed to be used in conjunction with Microsoft™ Office 365™
 Word and Excel™ apps.
 # How it works:
-A .docx, .pdf or .txt file is processed as utf8 text (note: MS Word smartquotes must be converted to straight quotes).  The term for the party-in-interest in the contract is passed with the processed text to textacy's Keyword in Context (KWIC) function, and the result then save as an Excel file which is opened with a subprocess call, returning results similar to the following, which can be further processed (e.g. alphabetized) in Excel:
+A .docx, .pdf or .txt file is processed as utf8 text (note: MS Word Smart Quotes must be converted to straight quotes as discussed below).
+The term for the party-in-interest in the contract is passed with the processed text to textacy's Keyword in Context (KWIC) function,
+and the result then saved as an Excel file in the same location as the
+file containing the document being searched, with the same name as the file
+being searched with "..._[name of the party]_search_result.xlsx" appended.
+The Excel file is opened with a subprocess call, returning results similar to the following, which can be further processed (e.g. alphabetized) in Excel:
 
 ![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-12-10%20224559.jpg)
 
-Note: the subprocess call below uses the default Microsoft
-Office 365™ install location:
+Note: the subprocess call below uses the default Office install location:
 
 ```python
 import subprocess
@@ -29,21 +33,18 @@ sentence. Sentences containing a match which are not duplicates of
 existing sentences in the master list are added to a master list. The
 master list is then saved as a Word file that is opened automatically at
 the end of the run (as with Excel, note the location of the Word
-executable). The master list file is saved in the same location as the
-file with the document being searched, with the same name as the file
-being searched with "..._[name of the party]_search_result.docx" appended.
-
+executable). 
 # External Dependencies and Licenses
 
 | Name:        | Version: | License:                                                                |
 |--------------|----------|-------------------------------------------------------------------------|
 | docx2python  | 2.0.4    | [MIT](https://pypi.org/project/docx2python/)                            |
-| textacy      | 3.7      | [Apache 2.0](https://pypi.org/project/textacy/)                            |
+| textacy      | 0.13.0   | [Apache 2.0](https://pypi.org/project/textacy/)                         |
 | pyinputplus  | 0.2.12   | [BSD](https://github.com/asweigart/pyinputplus/blob/master/LICENSE.txt) |
 | python-docx  | 0.8.11   | [MIT](https://github.com/atriumlts/python-docx/blob/master/LICENSE)     |
 | spacy        | 3.4.1    | [MIT](https://pypi.org/project/spacy/)                                  |
 | pdfminer.six | 20220524 | [MIT/X](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE)   |
-
+| python-docx  | 0.8.11   | [MIT](https://pypi.org/project/python-docx/)
 # N.B.
 ## Installation
 This project was created in a virtual environment.  Also, if installing the dependencies via the Requirements.txt file:
