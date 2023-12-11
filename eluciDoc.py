@@ -2,8 +2,8 @@
 import os
 import re
 import subprocess
-import nltk
-from nltk import word_tokenize
+import pandas as pd
+from textacy import extract
 import spacy
 import pyinputplus as pyip
 from pdfminer.high_level import extract_text
@@ -12,15 +12,19 @@ from pathlib import Path
 from docx import Document
 from docx.shared import Inches, Pt
 
-global text, case_sensitive, search_phrase, search_phrase_list, master_list, sentences
+global text, case_sensitive, search_phrase, search_phrase_list, master_list, sentences, party, target_File_path, \
+    result_filename
 
 
-def concord(party_term: str, content: str):
-    # Returns None type - Results are printed to screen
-    tokens = word_tokenize(content)
-    token_text = nltk.Text(tokens)
-    concordance_result = token_text.concordance(party_term, width=150, lines=500)
-    return concordance_result
+def kwic(text, party):
+    result = extract.kwic.keyword_in_context(text, keyword=party, window_width=80)
+    df = pd.DataFrame(result, columns=['Left', 'Key', 'Right'])
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.max_colwidth', None)
+    pd.set_option('display.max_columns', 3)
+    result_file = rf'{target_File_path}\{result_filename}_{party}_search_result.xlsx'
+    df.to_excel(result_file, index=False)
+    subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE', result_file])
 
 
 def is_match(sent):
@@ -35,7 +39,7 @@ while True:
     filename, file_extension = os.path.splitext(target_File)
     p = Path(target_File)
     target_File_path = p.parent
-    result_Filename = p.name
+    result_filename = p.name
     extensions = ['.docx', '.pdf', '.txt']
 
     if file_extension not in extensions:
@@ -77,14 +81,10 @@ while True:
     master_List = []
     search_phrase_list: list[str] = []
 
-    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected:)')
+    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected:')
     if case_sensitive == 'No':
         party = party.lower()
-    concord(party, text)
-    print('\n', 'Run Excel?')
-    excel_Response = pyip.inputMenu(['Yes', 'No'], numbered=True)
-    if excel_Response == 'Yes':
-        subprocess.Popen(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE')
+    kwic(text, party)
 
     while True:
         secTerm: str = input(r'''Enter a predicate search term or phrase - include "'s" or "'" for possessive case of
@@ -122,9 +122,9 @@ while True:
     document.add_paragraph(f'Phrases searched: {list_Status}')
     for j in master_List:
         document.add_paragraph(j)
-    document.save(rf'{target_File_path}\{result_Filename}_{party}_search_result.docx')
+    document.save(rf'{target_File_path}\{result_filename}_{party}_search_result.docx')
     subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE',
-                      rf'{target_File_path}\{result_Filename}_{party}_search_result.docx'])
+                      rf'{target_File_path}\{result_filename}_{party}_search_result.docx'])
     response = pyip.inputMenu(['Search another party', 'Finished'], numbered=True)
     if response == 'Search another party':
         continue
