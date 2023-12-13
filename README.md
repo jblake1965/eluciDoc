@@ -1,3 +1,4 @@
+![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-12-13%20061157.jpg)
 # What this is:
 This CLI Python 3.11 project, written in the Windows™ environment, filters
 sentences containing specific phrases from a document. This project was
