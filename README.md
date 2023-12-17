@@ -1,4 +1,5 @@
 ![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-12-13%20061157.jpg)
+![GitHub Discussions](https://img.shields.io/github/discussions/jblake1965/eluciDoc?logoColor=orange&labelColor=blue&color=orange&link=https%3A%2F%2Fgithub.com%2Fjblake1965%2FeluciDoc%2Fdiscussions%2F3)
 # What this is:
 This CLI Python 3.11 project, written in the Windows™ environment, filters
 sentences containing specific phrases from a document. This project was
