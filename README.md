@@ -21,8 +21,7 @@ The Excel file is opened with a subprocess call, returning results similar to th
 Note: the subprocess call below uses the default Office install location:
 
 ```python
-import subprocess
-subprocess.Popen(r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE')
+ subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE', result_file])
 ```
 
 If the user has Office installed in a different location, then the above
