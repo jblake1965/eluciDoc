@@ -81,7 +81,7 @@ while True:
     master_List = []
     search_phrase_list: list[str] = []
 
-    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected:')
+    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected):')
     if case_sensitive == 'No':
         party = party.lower()
     kwic(text, party)
