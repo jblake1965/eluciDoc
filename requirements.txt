@@ -38,7 +38,7 @@ pathy==0.10.1
 pdfminer.six==20220524
 preshed==3.0.9
 pycparser==2.21
-pydantic==2.4.2
+pydantic==2.5.3
 pydantic_core==2.10.1
 PyInputPlus==0.2.12
 pyparsing==3.0.9
