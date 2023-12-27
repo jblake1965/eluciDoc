@@ -65,7 +65,7 @@ srsly==2.4.8
 stdiomask==0.0.6
 sympy==1.12
 textacy==0.13.0
-thinc==8.2.1
+thinc==8.2.2
 threadpoolctl==3.2.0
 tokenizers==0.15.0
 toolz==0.12.0
