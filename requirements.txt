@@ -73,7 +73,7 @@ torch==2.0.1
 tqdm==4.66.1
 transformers==4.36.2
 typer==0.9.0
-typing_extensions==4.8.0
+typing_extensions==4.9.0
 tzdata==2023.3
 urllib3==2.1.0
 wasabi==1.1.2
