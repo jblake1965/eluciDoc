@@ -1,6 +1,6 @@
 ![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-12-13%20061157.jpg)
 
-[![GitHub Discussions](https://img.shields.io/github/discussions/jblake1965/eluciDoc?labelColor=blue&color=orange)](https://github.com/jblake1965/eluciDoc/discussions/3) 
+[![CodeQL](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql) [![GitHub Discussions](https://img.shields.io/github/discussions/jblake1965/eluciDoc?labelColor=blue&color=orange)](https://github.com/jblake1965/eluciDoc/discussions/3) 
 
 # What this is:
 This CLI Python 3.11 project, written in the Windows™ environment, filters
