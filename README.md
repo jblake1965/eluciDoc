@@ -78,9 +78,11 @@ to capture an instance of a possessive case, as illustrated below:
 ## PDFs
 Due to the nature of .pdf files and the sometimes-inconsistent results
 that occur when converting pdf documents to text format, additional
-processing is done. Extra spaces between word boundaries are removed
-with a regex:
-
+processing is done. Some characters and extra spaces between word boundaries are removed as part of the text processing:
+```python
+text = re.sub(u'[^\u0020-\uD7FF\u0009\u000A\u000D\uE000-\uFFFD\U00010000-\U0010FFFF]+', '', text)
+text = re.sub(r'(\b)(\s{2,4})(\b)', r'\g<1> ', text)
+```
 The above solution is not a comprehensive fix for pdf issues. The
 accuracy of the results with searches of .pdf files may be negatively
 impacted by the quality of the underlying document, particularly with
