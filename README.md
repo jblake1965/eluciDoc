@@ -1,4 +1,4 @@
-![alt text](https://github.com/jblake1965/eluciDoc/blob/developer/Pictures/Screenshot%202023-12-13%20061157.jpg)
+![alt text](https://github.com/jblake1965/eluciDoc/blob/6b49e8e144ac18308403b83fea5709755d24c04a/Pictures/eluciDoc%20header.jpg)
 
 [![CodeQL](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql) [![GitHub Discussions](https://img.shields.io/github/discussions/jblake1965/eluciDoc?labelColor=blue&color=orange)](https://github.com/jblake1965/eluciDoc/discussions/3) 
 
