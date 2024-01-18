@@ -38,7 +38,7 @@ pdfminer.six==20231228
 preshed==3.0.9
 pycparser==2.21
 pydantic==2.5.3
-pydantic_core==2.15.0
+pydantic_core==2.16.0
 PyInputPlus==0.2.12
 pyparsing==3.1.1
 pyperclip==1.8.2
