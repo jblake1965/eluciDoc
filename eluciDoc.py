@@ -108,7 +108,7 @@ while True:
         search_phrase_list.append(search_phrase)
         list_Status = ' | '.join(search_phrase_list)
         print('')
-        print(highlight("blue", (colourise("grey", f'Search Phrases: {list_Status}'))))  # tracks Search Phrases
+        print(highlight("blue", (colourise("gray", f'Search Phrases: {list_Status}'))))  # tracks Search Phrases
         print('')
 
         response = pyinputplus.inputMenu(['Enter another search term', 'Finished for this party'], numbered=True)
