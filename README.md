@@ -103,3 +103,16 @@ text = re.sub(r'‘', '\'', text)  # replace single smartquote open quote
 If a search for the same party is run twice and the file with the prior search results is open, an error is returned as
 the script cannot replace the existing file with the first search results.  Before running the same search again, the
 prior search file must be closed or deleted.
+
+# January 20, 2024 update:
+
+Accesory.py is added containing the colourise and highlight modules.  Separate modules for processing text and pdf's (from the original code) are now in
+accessory.py as well.
+
+TQDM progress bars have been added to measure times to load the script, process the file, and perform sentence tokenization and
+KWIC array.  Also, the Search Phrases list is highlighted in blue in the terminal using the [ColourfulShell gist](https://github.com/ChrisMorrisOrg/Pi-in-Py/blob/e785cc33f6b9e742b694b5c78fd3f2bb1331695e/pi.py#L54).  To change the highlight and text color change the values in the following using the colors
+from the colourise and highlight modules:
+
+```python
+print(highlight("blue", (colourise("gray", f'Search Phrases: {list_Status}'))))
+```
