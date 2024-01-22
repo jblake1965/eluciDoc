@@ -12,7 +12,7 @@ confection==0.1.4
 cryptography==41.0.7
 cymem==2.0.8
 cytoolz==0.12.2
-docx2python==2.7.3
+docx2python==2.8.0
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
 et-xmlfile==1.1.0
 filelock==3.13.1
