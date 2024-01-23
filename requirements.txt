@@ -1,5 +1,5 @@
 annotated-types==0.6.0
-blis==0.9.1
+blis==0.7.11
 cachetools==5.3.2
 catalogue==2.0.10
 certifi==2023.11.17
@@ -38,6 +38,7 @@ pathlib_abc==0.2.0
 pathy==0.11.0
 pdfminer.six==20231228
 preshed==3.0.9
+pyarrow==15.0.0
 pycparser==2.21
 pydantic==2.5.3
 pydantic_core==2.16.1
