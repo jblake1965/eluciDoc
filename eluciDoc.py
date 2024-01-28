@@ -12,10 +12,7 @@ for i in tqdm(range(1), desc='Loading...', ncols=75):
     from pathlib import Path
     from docx import Document
     from docx.shared import Inches, Pt
-    from accessory import text_cleanup
-    from accessory import pdf_cleanup
-    from accessory import highlight
-    from accessory import colourise
+    from accessory import text_cleanup, pdf_cleanup, highlight, colourise
 
 global text, case_sensitive, search_phrase, search_phrase_list, master_list, sentences, party, target_File_path, \
     result_filename
