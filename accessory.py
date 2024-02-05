@@ -42,7 +42,8 @@ def highlight(colour, text):
 
 
 def text_cleanup(text):
-    text = text.replace("\n", " ")
+    text = text.replace('\n', ' ')
+    text = text.replace('\xa0', ' ')
     text = re.sub(r'”', '\"', text)  # replace double smartquote open quote
     text = re.sub(r'“', '\"', text)  # replace double smartquote close quote
     text = re.sub(r'’', '\'', text)  # replace single smartquote close quote
