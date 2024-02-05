@@ -41,7 +41,7 @@ preshed==3.0.9
 pyarrow==15.0.0
 pycparser==2.21
 pydantic==2.6.0
-pydantic_core==2.16.1
+pydantic_core==2.16.2
 PyInputPlus==0.2.12
 pyparsing==3.1.1
 pyperclip==1.8.2
