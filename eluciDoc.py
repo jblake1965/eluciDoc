@@ -82,7 +82,8 @@ while True:
     master_List = []
     search_phrase_list: list[str] = []
 
-    party: str = input('Enter the term for the party to be searched (entry is case sensitive if that option selected):')
+    party = pyinputplus.inputStr(r'''Enter the term for the party to be searched (entry is case sensitive if that
+     option selected):''')
     if case_sensitive == 'No':
         party = party.lower()
     print("")
@@ -92,8 +93,8 @@ while True:
     print("")
 
     while True:
-        secTerm: str = input(r'''Enter a predicate search term or phrase (include "'s" or "'" for possessive case of
-         the party being searched):''')
+        secTerm = pyinputplus.inputStr(r'''Enter a predicate search term or phrase (include "'s" or "'" for possessive
+         case of the party being searched):''')
 
         if not secTerm.startswith("'"):  # add a space where the second term is not an apostrophe
             secTerm = " ".join(["", secTerm])
