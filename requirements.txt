@@ -9,7 +9,7 @@ click==8.1.7
 cloudpathlib==0.17.0
 colorama==0.4.6
 confection==0.1.4
-cryptography==42.0.2
+cryptography==42.0.3
 cymem==2.0.8
 cytoolz==0.12.3
 docx2python==2.8.0
