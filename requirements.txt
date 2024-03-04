@@ -47,7 +47,7 @@ pyparsing==3.1.1
 pyperclip==1.8.2
 pyphen==0.14.0
 PySimpleValidate==0.2.12
-python-dateutil==2.9.0
+python-dateutil==2.9.0.post0
 python-docx==1.1.0
 python-utils==3.8.2
 pytz==2024.1
