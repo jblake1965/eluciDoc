@@ -43,7 +43,7 @@ pycparser==2.21
 pydantic==2.6.3
 pydantic_core==2.16.3
 PyInputPlus==0.2.12
-pyparsing==3.1.1
+pyparsing==3.1.2
 pyperclip==1.8.2
 pyphen==0.14.0
 PySimpleValidate==0.2.12
