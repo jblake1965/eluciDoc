@@ -15,7 +15,7 @@ cytoolz==0.12.3
 docx2python==2.10.1
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
 et-xmlfile==1.1.0
-filelock==3.13.4
+filelock==3.14.0
 floret==0.10.5
 fsspec==2024.3.1
 huggingface-hub==0.22.2
