@@ -38,7 +38,6 @@ def kwic(text, party):
     except PermissionError:
         print('\n')
         console.print(rf'''[bold green italic]***NOTE: AN INSTANCE OF [/][bold red italic]"{target_File_path}\{result_filename}_{party}_search_result.xlsx" [/][bold green italic]IS ALREADY OPEN***[/]''')
-        # fix so it prompts to close open instance of file
 
 
 def is_match(sent):
@@ -104,8 +103,7 @@ while True:
     master_List = []
     search_phrase_list: list[str] = []
 
-    party = console.input(r'''[bold green italic]ENTER THE TERM FOR THE PARTY BEING SEARCHED (ENTRY IS CASE SENSITIVE IF
-     THAT OPTION IS SELECTED):[/]''')
+    party = console.input(r'''[bold green italic]ENTER THE TERM FOR THE PARTY BEING SEARCHED (ENTRY IS CASE SENSITIVE IF THAT OPTION IS SELECTED):[/]''')
     if party == "":
         console.print('\n', r'[bold red italic]***PARTY NAME MUST BE ENTERED***[/]', '\n')
         continue
@@ -118,8 +116,7 @@ while True:
     console.print("")
 
     while True:
-        secTerm = console.input(r'''[bold green italic]ENTER A PREDICATE SEARCH TERM OR PHRASE (INCLUDE "'S" OR "'" 
-        FOR THE POSSESSIVE CASE OF THE PARTY BEING SEARCHED):[/]''')
+        secTerm = console.input(r'''[bold green italic]ENTER A PREDICATE SEARCH TERM OR PHRASE (INCLUDE "'S" OR "'" FOR THE POSSESSIVE CASE OF THE PARTY BEING SEARCHED):[/]''')
 
         if secTerm == "":
             console.print('\n', r'[bold red italic]***A PREDICATE SEARCH TERM OR PHRASE MUST BE ENTERED***[/]', '\n')
@@ -166,17 +163,24 @@ while True:
     document.add_paragraph(f'Phrases searched: {list_Status}')
     for j in master_List:
         document.add_paragraph(j)
+
     try:
         document.save(rf'{target_File_path}\{result_filename}_{party}_search_result.docx')
     except PermissionError:
-        console.print('\n', rf'''[bold red italic]***AN INSTANCE OF "{target_File_path}\{result_filename}_{party}_search_result.docx" IS 
-        ALREADY OPEN. CLOSE FILE AND PRESS <ENTER>***''')
-        wait = input("")
+        while True:
+            console.print('\n', rf'''[bold red italic]*** AN INSTANCE OF "{target_File_path}\{result_filename}_{party}_search_result.docx" IS ALREADY OPEN. CLOSE FILE AND PRESS <ENTER> ***''')
+            wait = input("")
+            try:
+                document.save(rf'{target_File_path}\{result_filename}_{party}_search_result.docx')
+                break
+            except PermissionError:
+                continue
+
     subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE',
                       rf'{target_File_path}\{result_filename}_{party}_search_result.docx'])
 
     while True:
-        another_search_response = console.input('[bold green italic]RUN A SEARCH FOR ANOTHER PARTY?: YES or NO [/]')
+        another_search_response = console.input(r'[bold green italic]RUN A SEARCH FOR ANOTHER PARTY?: YES or NO  [/][bold magenta italic]*** IF SEARCHING THE SAME PARTY SAVE THE EXISTING SEARCH RESULTS FILE WITH A DIFFERENT NAME (e.g. ".run_1.docx") AS THE EXISTING FILE WILL BE OVERWRITTEN ***   [/]')
         print("")
         another_search_response = another_search_response.lower()
         if another_search_response not in ['yes', 'no']:
