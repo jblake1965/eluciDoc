@@ -76,6 +76,7 @@ while True:
                 target = open(target_File, 'r', encoding='utf8')
                 text = target.read()
                 text = text_cleanup(text)
+                text = pdf_cleanup(text)
         break
 
 while True:

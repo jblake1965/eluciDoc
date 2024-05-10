@@ -64,7 +64,15 @@ python -m spacy download en_core_web_lg
 ```
 You must also be sure to verify the directory for the Office install is the same as noted above.  If not, the code must be 
 changed to the directory where the Excel and Word apps are located.
+# Running the Script
+The project is run as a script.  It can be run with a .bat file calling the virtual environment and the executable
+file per the below example:
+```commandline
+@"C:\Users\..\venv\Scripts\python.exe" "C:\Users\..\venv\lib\elucidoc\eluciDoc.py"
 
+@pause
+```
+Additionally, the location of the ```elucidoc.py``` executable can be included in the Windows ```PATH``` environment variable.
 # Case Sensitive Searches
 General convention in legal texts is to capitalize defined terms.  For that reason, the user may want to make the search
 case-sensitive to target the appropriate instances of the term.  For searches where the specific use of the subject term

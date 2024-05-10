@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "elucidoc"
-version = "2024.5.5"
+version = "2024.5.9-1"
 license = {file = "LICENSE.txt"}
 description = "Screens legal and other texts for sentences and clauses containing user defined search phrases"
 readme = "README.md"
@@ -21,5 +21,3 @@ dependencies = ["docx2python==2.10.1", "openpyxl==3.1.2", "pandas==2.2.2", "pdfm
 [project.urls]
 "Source Code" = "https://github.com/jblake1965/eluciDoc"
 "License" = "https://github.com/jblake1965/eluciDoc/blob/developer/LICENSE.txt"
-
-
