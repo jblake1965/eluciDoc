@@ -52,7 +52,7 @@ run (as with Excel, note the location of the Word executable and adjust the path
 | pdfminer.six | 20220524 | [MIT/X](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE)   |
 | python-docx  | 0.8.11   | [MIT](https://pypi.org/project/python-docx/)                            |
 # Installation
-It is strongly recommended that this package be installed in a virtual environment.  The package is available as [www.pypi.org\elucidoc](www.pypi.org\elucidoc),
+It is strongly recommended that this package be installed in a virtual environment.  The package is available at https://pypi.org/project/elucidoc/ 
 and can be installed with ```pip install elucidoc``` .
 
 ***THE SPACY PIPELINE  `  en_core_web_lg  `  MUST ALSO BE INSTALLED INTO THE VIRTUAL
