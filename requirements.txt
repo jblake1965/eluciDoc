@@ -1,5 +1,5 @@
 annotated-types==0.6.0
-backports.tarfile==1.0.0
+backports.tarfile==1.1.1
 blis==0.9.1
 build==1.2.1
 cachetools==5.3.3
@@ -26,7 +26,7 @@ idna==3.7
 importlib_metadata==7.1.0
 jaraco.classes==3.4.0
 jaraco.context==5.3.0
-jaraco.functools==4.0.0
+jaraco.functools==4.0.1
 jellyfish==1.0.3
 Jinja2==3.1.4
 joblib==1.4.2
@@ -56,12 +56,12 @@ pyarrow==16.0.0
 pycparser==2.22
 pydantic==2.7.1
 pydantic_core==2.18.2
-Pygments==2.17.2
+Pygments==2.18.0
 PyInputPlus==0.2.12
 pyparsing==3.1.2
 pyperclip==1.8.2
 pyphen==0.15.0
-pyproject_hooks==1.0.0
+pyproject_hooks==1.1.0
 PySimpleValidate==0.2.12
 python-dateutil==2.9.0.post0
 python-docx==1.1.2
