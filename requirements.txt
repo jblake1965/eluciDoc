@@ -30,7 +30,7 @@ jaraco.functools==4.0.0
 jellyfish==1.0.3
 Jinja2==3.1.4
 joblib==1.4.2
-keyring==25.1.0
+keyring==25.2.0
 langcodes==3.4.0
 lxml==5.2.1
 markdown-it-py==3.0.0
