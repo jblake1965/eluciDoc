@@ -20,7 +20,7 @@ en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_
 et-xmlfile==1.1.0
 filelock==3.14.0
 floret==0.10.5
-fsspec==2024.3.1
+fsspec==2024.5.0
 huggingface-hub==0.23.0
 idna==3.7
 importlib_metadata==7.1.0
@@ -30,7 +30,7 @@ jaraco.functools==4.0.1
 jellyfish==1.0.3
 Jinja2==3.1.4
 joblib==1.4.2
-keyring==25.2.0
+keyring==25.2.1
 langcodes==3.4.0
 lxml==5.2.2
 markdown-it-py==3.0.0
@@ -52,7 +52,7 @@ pathy==0.11.0
 pdfminer.six==20231228
 pkginfo==1.10.0
 preshed==3.0.9
-pyarrow==16.0.0
+pyarrow==16.1.0
 pycparser==2.22
 pydantic==2.7.1
 pydantic_core==2.18.2
@@ -70,7 +70,7 @@ pytz==2024.1
 pywin32-ctypes==0.2.2
 PyYAML==6.0.1
 readme_renderer==43.0
-regex==2024.5.10
+regex==2024.5.15
 requests==2.31.0
 requests-toolbelt==1.0.0
 rfc3986==2.0.0
@@ -103,6 +103,6 @@ typing_extensions==4.11.0
 tzdata==2024.1
 urllib3==2.2.1
 wasabi==1.1.2
-weasel==0.4.0
+weasel==0.4.1
 wrapt==1.16.0
 zipp==3.18.1
