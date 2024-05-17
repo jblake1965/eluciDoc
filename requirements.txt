@@ -97,7 +97,7 @@ toolz==0.12.1
 torch==2.3.0
 tqdm==4.66.4
 transformers==4.40.2
-twine==5.0.0
+twine==5.1.0
 typer==0.12.3
 typing_extensions==4.11.0
 tzdata==2024.1
@@ -105,4 +105,4 @@ urllib3==2.2.1
 wasabi==1.1.2
 weasel==0.4.1
 wrapt==1.16.0
-zipp==3.18.1
+zipp==3.18.2
