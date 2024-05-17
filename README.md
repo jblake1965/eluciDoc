@@ -1,6 +1,6 @@
 ![eluciDoc_header](https://github.com/jblake1965/eluciDoc/assets/100727736/e7f94b7f-fb1b-4f55-8665-4dc11c6b93af)
 
-[![CodeQL](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql) [![GitHub Discussions](https://img.shields.io/github/discussions/jblake1965/eluciDoc?labelColor=blue&color=orange)](https://github.com/jblake1965/eluciDoc/discussions/3) 
+[![CodeQL](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/jblake1965/eluciDoc/actions/workflows/github-code-scanning/codeql) [![GitHub Discussions](https://img.shields.io/github/discussions/jblake1965/eluciDoc?labelColor=blue&color=orange)](https://github.com/jblake1965/eluciDoc/discussions/3) [![PYPI Version](https://img.shields.io/pypi/v/elucidoc?logoColor=blue&labelColor=green)](https://img.shields.io/pypi/v/elucidoc?logoColor=blue&labelColor=green)
 
 # What this is:
 This CLI Python project, written for the Windows™ environment, filters sentences and clauses containing specific user input
