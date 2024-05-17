@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "elucidoc"
-version = "2024.5.10"
+version = "2024.5.17"
 license = {file = "LICENSE.txt"}
 description = "Screens legal and other texts for sentences and clauses containing user defined search phrases"
 readme = "README.md"
