@@ -10,7 +10,7 @@ The general principle behind its function is subject-predicate sentence analysis
 in the document, followed by a user-selected phrase.  It is used in conjunction with Microsoft™ Office 365™
 Word and Excel™ apps.
 # How it works:
-A .docx, .pdf or .txt file (with the path) is entered:
+A .docx, .pdf or .txt file and path is entered (drag and drop work in the Windows terminal):
 
 ![file_input](https://github.com/jblake1965/eluciDoc/assets/100727736/c08d59a4-a019-4a42-b895-427a1815b474)
 
@@ -42,15 +42,17 @@ are added to the master list. The master list is then saved as a Word file that 
 run (as with Excel, note the location of the Word executable and adjust the path if it is not in the standard install location). 
 # External Dependencies and Licenses
 
-| Name:        | Version: | License:                                                                |
-|--------------|----------|-------------------------------------------------------------------------|
-| docx2python  | 2.0.4    | [MIT](https://pypi.org/project/docx2python/)                            |
-| textacy      | 0.13.0   | [Apache 2.0](https://pypi.org/project/textacy/)                         |
-| pyinputplus  | 0.2.12   | [BSD](https://github.com/asweigart/pyinputplus/blob/master/LICENSE.txt) |
-| python-docx  | 0.8.11   | [MIT](https://github.com/atriumlts/python-docx/blob/master/LICENSE)     |
-| spacy        | 3.4.1    | [MIT](https://pypi.org/project/spacy/)                                  |
-| pdfminer.six | 20220524 | [MIT/X](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE)   |
-| python-docx  | 0.8.11   | [MIT](https://pypi.org/project/python-docx/)                            |
+| Name:         | Version: | License:                                                                |
+|---------------|----------|-------------------------------------------------------------------------|
+| docx2python   | 2.10.1   | [MIT](https://pypi.org/project/docx2python/)                            |
+| openpyxl      | 3.1.2    | [MIT](https://pypi.org/project/openpyxl/)                               |
+| pandas        | 2.2.2    | [BSD](https://pypi.org/project/pandas/)    |
+| pdfminer.six  | 20231228 | [MIT/X](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE)   |
+| python-docx   | 1.1.2    | [MIT](https://github.com/atriumlts/python-docx/blob/master/LICENSE)     |
+| rich          | 13.7.1   | [MIT](https://pypi.org/project/rich/)                                   |
+| spacy         | 3.7.4    | [MIT](https://pypi.org/project/spacy/)                                  |
+| textacy       | 0.13.0   | [Apache 2.0](https://pypi.org/project/textacy/)                         |
+
 # Installation
 It is strongly recommended that this package be installed in a virtual environment.  The package is available at https://pypi.org/project/elucidoc/ 
 and can be installed with ```pip install elucidoc``` .
