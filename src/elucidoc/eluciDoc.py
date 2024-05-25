@@ -21,11 +21,10 @@ for i in track(range(2), description="[bold magenta italic]Loading...[/]"):
 
 
 global text, case_sensitive, search_phrase, search_phrase_list, master_list, sentences, party, target_File_path, \
-    result_filename
+    result_filename, result_file
 
 
 def kwic(text, party):
-    global result_file
     result = extract.kwic.keyword_in_context(text, keyword=party, window_width=80)
     df = pandas.DataFrame(result, columns=['Left', 'Key', 'Right'])
     pandas.set_option('display.max_rows', None)

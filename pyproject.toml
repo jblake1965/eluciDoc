@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "elucidoc"
-version = "2024.5.17"
+version = "2024.5.25"
 license = {file = "LICENSE.txt"}
 description = "Screens legal and other texts for sentences and clauses containing user defined search phrases"
 readme = "README.md"
@@ -16,7 +16,10 @@ classifiers = [
     "License :: Other/Proprietary License"
 ]
 keywords = ["legal", "text", "analysis"]
-dependencies = ["docx2python==2.10.1", "openpyxl==3.1.2", "pandas==2.2.2", "pdfminer.six==20231228", "python-docx==1.1.2", "rich==13.7.1", "spacy==3.7.4", "textacy==0.13.0"]
+dependencies = [
+    "docx2python==2.10.1", "openpyxl==3.1.2", "pandas==2.2.2", "pdfminer.six==20231228", "python-docx==1.1.2",
+    "rich==13.7.1", "spacy==3.7.4", "textacy==0.13.0"
+]
 
 [project.urls]
 "Source Code" = "https://github.com/jblake1965/eluciDoc"
