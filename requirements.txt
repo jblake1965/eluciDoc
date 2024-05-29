@@ -1,5 +1,5 @@
 annotated-types==0.7.0
-backports.tarfile==1.1.1
+backports.tarfile==1.2.0
 blis==0.9.1
 build==1.2.1
 cachetools==5.3.3
