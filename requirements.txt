@@ -105,4 +105,4 @@ urllib3==2.2.1
 wasabi==1.1.2
 weasel==0.4.1
 wrapt==1.16.0
-zipp==3.19.0
+zipp==3.19.1
