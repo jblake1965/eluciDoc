@@ -122,7 +122,7 @@ while True:
             console.print('\n', r'[bold red italic]***A PREDICATE SEARCH TERM OR PHRASE MUST BE ENTERED***[/]', '\n')
             continue
 
-        valid = re.compile(r"^[',;:)].*")
+        valid = re.compile(r"^[',;:)].*")  # if not one of these add a space between the party and the secTerm
         if not valid.match(rf"{secTerm}"):
             secTerm = " ".join(["", secTerm])
 
