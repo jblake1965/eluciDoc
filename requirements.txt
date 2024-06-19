@@ -59,7 +59,7 @@ pydantic_core==2.19.0
 Pygments==2.18.0
 PyInputPlus==0.2.12
 pyparsing==3.1.2
-pyperclip==1.8.2
+pyperclip==1.9.0
 pyphen==0.15.0
 pyproject_hooks==1.1.0
 PySimpleValidate==0.2.12
