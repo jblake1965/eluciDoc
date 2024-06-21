@@ -23,7 +23,7 @@ floret==0.10.5
 fsspec==2024.6.0
 huggingface-hub==0.23.4
 idna==3.7
-importlib_metadata==7.1.0
+importlib_metadata==7.2.0
 jaraco.classes==3.4.0
 jaraco.context==5.3.0
 jaraco.functools==4.0.1
