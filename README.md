@@ -29,7 +29,7 @@ further sorting:
 Note: the subprocess call below uses the default Office install location:
 
 ```python
- subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE', result_file])
+subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE', result_file])
 ```
 
 If the user has Office installed in a different location, then the code must be changed to reflect that directory.
@@ -42,16 +42,16 @@ are added to the master list. The master list is then saved as a Word file that 
 run (as with Excel, note the location of the Word executable and adjust the path if it is not in the standard install location). 
 # External Dependencies and Licenses
 
-| Name:         | Version: | License:                                                                |
-|---------------|----------|-------------------------------------------------------------------------|
-| docx2python   | 2.10.1   | [MIT](https://pypi.org/project/docx2python/)                            |
-| openpyxl      | 3.1.2    | [MIT](https://pypi.org/project/openpyxl/)                               |
-| pandas        | 2.2.2    | [BSD](https://pypi.org/project/pandas/)    |
-| pdfminer.six  | 20231228 | [MIT/X](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE)   |
-| python-docx   | 1.1.2    | [MIT](https://github.com/atriumlts/python-docx/blob/master/LICENSE)     |
-| rich          | 13.7.1   | [MIT](https://pypi.org/project/rich/)                                   |
-| spacy         | 3.7.4    | [MIT](https://pypi.org/project/spacy/)                                  |
-| textacy       | 0.13.0   | [Apache 2.0](https://pypi.org/project/textacy/)                         |
+| Name:        | License:                                                              |
+|--------------|-----------------------------------------------------------------------|
+| docx2python  | [MIT](https://pypi.org/project/docx2python/)                          |
+| openpyxl     | [MIT](https://pypi.org/project/openpyxl/)                             |
+| pandas       | [BSD](https://pypi.org/project/pandas/)                               |
+| pdfminer.six | [MIT/X](https://github.com/pdfminer/pdfminer.six/blob/master/LICENSE) |
+| python-docx  | [MIT](https://github.com/atriumlts/python-docx/blob/master/LICENSE)   |
+| rich         | [MIT](https://pypi.org/project/rich/)                                 |
+| spacy        | [MIT](https://pypi.org/project/spacy/)                                |
+| textacy      | [Apache 2.0](https://pypi.org/project/textacy/)                       |
 
 # Installation
 It is strongly recommended that this package be installed in a virtual environment.  The package is available at https://pypi.org/project/elucidoc/ 
