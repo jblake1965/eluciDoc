@@ -4,7 +4,7 @@ blis==0.9.1
 build==1.2.1
 cachetools==5.3.3
 catalogue==2.0.10
-certifi==2024.6.2
+certifi==2024.7.4
 cffi==1.16.0
 charset-normalizer==3.3.2
 click==8.1.7
@@ -43,7 +43,7 @@ networkx==3.3
 nh3==0.2.17
 nltk==3.8.1
 numpy==1.26.4
-openpyxl==3.1.4
+openpyxl==3.1.5
 packaging==24.1
 pandas==2.2.2
 paragraphs==0.2.1
@@ -54,8 +54,8 @@ pkginfo==1.11.1
 preshed==3.0.9
 pyarrow==16.1.0
 pycparser==2.22
-pydantic==2.7.4
-pydantic_core==2.20.0
+pydantic==2.8.2
+pydantic_core==2.20.1
 Pygments==2.18.0
 PyInputPlus==0.2.12
 pyparsing==3.1.2
@@ -75,7 +75,7 @@ requests-toolbelt==1.0.0
 rfc3986==2.0.0
 rich==13.7.1
 safetensors==0.4.3
-scikit-learn==1.5.0
+scikit-learn==1.5.1
 scipy==1.14.0
 shellingham==1.5.4
 six==1.16.0
@@ -95,7 +95,7 @@ tokenizers==0.19.1
 toolz==0.12.1
 torch==2.3.1
 tqdm==4.66.4
-transformers==4.42.2
+transformers==4.42.3
 twine==5.1.1
 typer==0.12.3
 typing_extensions==4.12.2
