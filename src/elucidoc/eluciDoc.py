@@ -20,7 +20,7 @@ for i in track(range(2), description="[bold magenta italic]Loading...[/]"):
     console = Console()
 
 
-global text, case_sensitive, search_phrase, search_phrase_list, master_list, sentences, party, target_File_path, \
+global text, case_sensitive, search_phrase, search_phrase_list, master_List, sentences, party, target_File_path, \
     result_filename, result_file
 
 
@@ -148,7 +148,23 @@ while True:
 
         if add_term_response == 'no':
             master_List = [sent for sent in sentences if is_match(sent)]
-            break
+            while True:
+                capitalize_search_phrase = console.input('[bold green italic]CAPITALIZE SEARCH PHRASES IN RESULTS DOCUMENT?: YES or NO [/]')
+                print("")
+                capitalize_search_phrase = capitalize_search_phrase.lower()
+                if capitalize_search_phrase not in ['yes', 'no']:
+                    console.print('\n', r'[bold red italic]PLEASE ENTER "YES" or "NO"[/]', '\n')
+                    continue
+                else:
+                    break
+
+            if capitalize_search_phrase == 'yes':
+                for search_phrase in search_phrase_list:
+                    master_List = [x.replace(search_phrase, search_phrase.upper()) for x in master_List]
+                break
+
+            else:
+                break
 
     document = Document()
     style = document.styles['Normal']
