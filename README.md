@@ -35,11 +35,16 @@ subprocess.Popen([r'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE', 
 If the user has Office installed in a different location, then the code must be changed to reflect that directory.
 
 The document is chunked into sentences (or clauses, depending on the formatting) with the spaCy module.
-The user is prompted to enter predicate search phrases culled from the Excel search file which are stored in a list.  
+The user is prompted to enter predicate search phrases culled from the Excel search file which phrases are stored in a list.  
 Once finished entering the predicate search phrases, the script iterates through the list of search phrases looking for
-a match in each sentence. Sentences and clauses containing a match sentences not already in the master list
-are added to the master list. The master list is then saved as a Word file that is opened automatically at the end of the
-run (as with Excel, note the location of the Word executable and adjust the path if it is not in the standard install location). 
+a match in each sentence. Sentences and clauses containing a match are added to a result list. The user has the option of 
+having the search phrases appear in ALL CAPS in the Word document containing the results, as shown:
+
+![all_caps_rendering](https://github.com/user-attachments/assets/5d07f8a5-ed26-4341-9bf8-0445de315245)
+
+
+The result list is then saved as a Word file that is opened automatically at the end of the run (as with Excel, 
+note the location of the Word executable and adjust the path if it is not in the standard install location). 
 # External Dependencies and Licenses
 
 | Name:        | License:                                                              |
