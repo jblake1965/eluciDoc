@@ -73,7 +73,7 @@ requests==2.32.3
 requests-toolbelt==1.0.0
 rfc3986==2.0.0
 rich==13.7.1
-safetensors==0.4.3
+safetensors==0.4.4
 scikit-learn==1.5.1
 scipy==1.14.0
 shellingham==1.5.4
