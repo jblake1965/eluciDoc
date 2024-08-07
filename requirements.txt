@@ -66,7 +66,7 @@ python-docx==1.1.2
 python-utils==3.8.2
 pytz==2024.1
 pywin32-ctypes==0.2.2
-PyYAML==6.0.1
+PyYAML==6.0.2
 readme_renderer==44.0
 regex==2024.7.24
 requests==2.32.3
