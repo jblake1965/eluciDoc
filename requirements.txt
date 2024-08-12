@@ -45,7 +45,7 @@ numpy==1.26.4
 openpyxl==3.1.5
 packaging==24.1
 pandas==2.2.2
-paragraphs==0.2.1
+paragraphs==1.0.1
 pathlib_abc==0.3.1
 pathy==0.11.0
 pdfminer.six==20240706
