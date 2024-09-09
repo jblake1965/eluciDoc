@@ -1,7 +1,7 @@
 annotated-types==0.7.0
 backports.tarfile==1.2.0
 blis==0.9.1
-build==1.2.1
+build==1.2.2
 cachetools==5.5.0
 catalogue==2.0.10
 certifi==2024.8.30
