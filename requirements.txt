@@ -18,7 +18,7 @@ docutils==0.21.2
 docx2python==3.0.0
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
 et-xmlfile==1.1.0
-filelock==3.15.4
+filelock==3.16.0
 floret==0.10.5
 fsspec==2024.9.0
 huggingface-hub==0.24.6
