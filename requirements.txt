@@ -92,7 +92,7 @@ thinc==8.3.2
 threadpoolctl==3.5.0
 tokenizers==0.20.1
 toolz==1.0.0
-torch==2.4.1
+torch==2.5.0
 tqdm==4.66.5
 transformers==4.45.2
 twine==5.1.1
