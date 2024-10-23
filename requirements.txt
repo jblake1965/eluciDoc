@@ -21,7 +21,7 @@ et-xmlfile==1.1.0
 filelock==3.16.1
 floret==0.10.5
 fsspec==2024.10.0
-huggingface-hub==0.25.2
+huggingface-hub==0.26.1
 idna==3.10
 importlib_metadata==8.5.0
 jaraco.classes==3.4.0
