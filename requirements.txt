@@ -58,7 +58,7 @@ pydantic_core==2.25.0
 Pygments==2.18.0
 PyInputPlus==0.2.12
 pyparsing==3.2.0
-pyphen==0.16.0
+pyphen==0.17.0
 pyproject_hooks==1.2.0
 PySimpleValidate==0.2.12
 python-dateutil==2.9.0.post0
