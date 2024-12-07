@@ -90,7 +90,7 @@ sympy==1.13.3
 textacy==0.13.0
 thinc==8.3.2
 threadpoolctl==3.5.0
-tokenizers==0.20.3
+tokenizers==0.21.0
 toolz==1.0.0
 torch==2.5.1
 tqdm==4.67.1
