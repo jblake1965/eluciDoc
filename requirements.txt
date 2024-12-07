@@ -27,7 +27,7 @@ importlib_metadata==8.5.0
 jaraco.classes==3.4.0
 jaraco.context==6.0.1
 jaraco.functools==4.1.0
-jellyfish==1.1.2
+jellyfish==1.1.0
 Jinja2==3.1.4
 joblib==1.4.2
 keyring==25.5.0
