@@ -97,7 +97,7 @@ tqdm==4.67.1
 transformers==4.50.3
 twine==6.1.0
 typer==0.15.2
-typing_extensions==4.13.1
+typing_extensions==4.13.2
 tzdata==2025.2
 urllib3==2.3.0
 wasabi==1.1.3
