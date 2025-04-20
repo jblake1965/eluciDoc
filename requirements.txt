@@ -48,7 +48,7 @@ pandas==2.2.3
 paragraphs==1.0.1
 pathlib_abc==0.4.1
 pathy==0.11.0
-pdfminer.six==20250327
+pdfminer.six==20250416
 pkginfo==1.12.1.2
 preshed==3.0.9
 pyarrow==19.0.1
