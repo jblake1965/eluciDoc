@@ -6,7 +6,7 @@ cachetools==5.5.2
 catalogue==2.0.10
 certifi==2025.4.26
 cffi==1.17.1
-charset-normalizer==3.4.1
+charset-normalizer==3.4.2
 click==8.1.8
 cloudpathlib==0.21.0
 colorama==0.4.6
