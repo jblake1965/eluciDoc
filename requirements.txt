@@ -68,7 +68,7 @@ pytz==2025.2
 pywin32-ctypes==0.2.3
 PyYAML==6.0.2
 readme_renderer==44.0
-regex==2024.11.6
+regex==2025.7.31
 requests==2.32.4
 requests-toolbelt==1.0.0
 rfc3986==2.0.0
