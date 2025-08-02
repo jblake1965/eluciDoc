@@ -46,7 +46,7 @@ openpyxl==3.1.5
 packaging==25.0
 pandas==2.3.1
 paragraphs==1.0.1
-pathlib_abc==0.4.3
+pathlib_abc==0.5.0
 pathy==0.11.0
 pdfminer.six==20250506
 pkginfo==1.12.1.2
