@@ -94,7 +94,7 @@ tokenizers==0.21.4
 toolz==1.0.0
 torch==2.8.0
 tqdm==4.67.1
-transformers==4.55.2
+transformers==4.55.4
 twine==6.1.0
 typer==0.16.1
 typing_extensions==4.14.1
