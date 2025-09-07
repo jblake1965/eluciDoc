@@ -95,7 +95,7 @@ toolz==1.0.0
 torch==2.8.0
 tqdm==4.67.1
 transformers==4.56.1
-twine==6.1.0
+twine==6.2.0
 typer==0.17.3
 typing_extensions==4.15.0
 tzdata==2025.2
