@@ -33,7 +33,7 @@ joblib==1.5.2
 keyring==25.6.0
 langcodes==3.5.0
 lxml==6.0.2
-markdown-it-py==3.0.0
+markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 mdurl==0.1.2
 more-itertools==10.8.0
