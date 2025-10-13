@@ -22,7 +22,7 @@ filelock==3.20.0
 floret==0.10.5
 fsspec==2025.9.0
 huggingface-hub==0.35.3
-idna==3.10
+idna==3.11
 importlib_metadata==8.7.0
 jaraco.classes==3.4.0
 jaraco.context==6.0.1
