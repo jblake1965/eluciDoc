@@ -54,7 +54,7 @@ preshed==3.0.10
 pyarrow==22.0.0
 pycparser==2.23
 pydantic==2.12.4
-pydantic_core==2.41.4
+pydantic_core==2.41.5
 Pygments==2.19.2
 PyInputPlus==0.2.12
 pyparsing==3.2.5
