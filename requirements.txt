@@ -20,7 +20,7 @@ en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_
 et-xmlfile==2.0.0
 filelock==3.20.0
 floret==0.10.5
-fsspec==2025.10.0
+fsspec==2025.12.0
 huggingface-hub==0.36.0
 idna==3.11
 importlib_metadata==8.7.0
