@@ -29,7 +29,7 @@ jaraco.context==6.0.1
 jaraco.functools==4.3.0
 jellyfish==1.2.1
 Jinja2==3.1.6
-joblib==1.5.2
+joblib==1.5.3
 keyring==25.7.0
 langcodes==3.5.1
 lxml==6.0.2
