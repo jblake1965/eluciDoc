@@ -15,7 +15,7 @@ cryptography==46.0.4
 cymem==2.0.13
 cytoolz==1.1.0
 docutils==0.22.4
-docx2python==3.5.0
+docx2python==3.6.2
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
 et-xmlfile==2.0.0
 filelock==3.20.3
