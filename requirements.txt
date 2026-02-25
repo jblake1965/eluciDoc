@@ -96,7 +96,7 @@ torch==2.10.0
 tqdm==4.67.3
 transformers==4.57.6
 twine==6.2.0
-typer==0.24.0
+typer==0.24.1
 typing_extensions==4.15.0
 tzdata==2025.3
 urllib3==2.6.3
