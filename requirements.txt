@@ -47,7 +47,7 @@ packaging==26.0
 pandas==3.0.1
 paragraphs==1.0.1
 pathlib_abc==0.5.2
-pathy==0.11.0
+pathy==0.13.0
 pdfminer.six==20260107
 pkginfo==1.12.1.2
 preshed==3.0.12
