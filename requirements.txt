@@ -41,7 +41,7 @@ mpmath==1.4.1
 murmurhash==1.0.15
 networkx==3.6.1
 nh3==0.3.4
-numpy==2.4.3
+numpy==2.4.4
 openpyxl==3.1.5
 packaging==26.0
 pandas==3.0.1
