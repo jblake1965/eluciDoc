@@ -36,7 +36,7 @@ lxml==6.0.2
 markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 mdurl==0.1.2
-more-itertools==11.0.1
+more-itertools==11.0.2
 mpmath==1.4.1
 murmurhash==1.0.15
 networkx==3.6.1
