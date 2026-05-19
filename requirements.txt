@@ -103,4 +103,4 @@ urllib3==2.7.0
 wasabi==1.1.3
 weasel==1.0.0
 wrapt==2.1.2
-zipp==3.23.1
+zipp==4.1.0
