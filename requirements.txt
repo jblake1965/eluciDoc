@@ -51,7 +51,7 @@ pathy==0.14.2
 pdfminer.six==20260107
 pkginfo==1.12.1.2
 preshed==3.0.13
-pyarrow==25.0.0
+pyarrow==25.0.1
 pycparser==3.0
 pydantic==2.13.4
 pydantic_core==2.46.4
