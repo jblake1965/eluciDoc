@@ -61,7 +61,7 @@ pyparsing==3.3.2
 pyphen==0.18.1
 pyproject_hooks==1.2.0
 PySimpleValidate==0.2.12
-python-dateutil==2.9.0.post0
+python-dateutil==3.0.0
 python-docx==1.2.0
 python-utils==4.0.0
 pytz==2026.3.post1
